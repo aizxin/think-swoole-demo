@@ -33,11 +33,11 @@ return [
     'enable_static_handler' => true,
     'timer'                 => true,//是否开启系统定时器
     'interval'              => 500,//系统定时器 时间间隔
-    'task_worker_num'       => 1,//swoole 任务工作进程数量
+    'task_worker_num'       => 4,//swoole 任务工作进程数量
 
     'queue_type'=>'process',//task or process
     'queue'=>[
-        "Index"=>[
+        "helloJobQueue"=>[
             "delay"=>0,//延迟时间
             "sleep"=>3,//休息时间
             "maxTries"=>0,//重试次数

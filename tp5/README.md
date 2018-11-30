@@ -178,3 +178,12 @@ All rights reserved。
 ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
 
 更多细节参阅 [LICENSE.txt](LICENSE.txt)
+
+
+'queue_type'=>'process',//task or process
+
+swoole_queue
+1、process
+swoole_set_process_name is not supported on MacOS  注释可以用
+2、task
+swooleTask 的包名问题
